@@ -187,7 +187,7 @@ img {
     top: 20px; /* Ajuste conforme necessário para posicionar a imagem verticalmente */
     left: 50%; /* Coloca a imagem no centro horizontalmente */
     transform: translateX(-50%); /* Move a imagem de volta metade da sua largura */
-    max-width: 200px; /* Define a largura máxima da imagem */
+    max-width: 150px; /* Define a largura máxima da imagem */
     z-index: 1; /* Garante que a imagem esteja acima do formulário */
   }
   #video-background {
