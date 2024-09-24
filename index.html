@@ -10,44 +10,123 @@
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css">
 
-    <title>Login - Indaiatuba </title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .login {
+            position: relative;
+            text-align: center;
+            z-index: 1;
+        }
+
+        .logo {
+            margin-bottom: 20px;
+        }
+
+        .login__form {
+            background-color: red; /* Fundo vermelho para o formulário */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .login__title {
+            margin: 0 0 20px;
+            font-size: 24px;
+            color: white; /* Texto branco para contraste */
+        }
+
+        .login__box {
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        .login__input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid red; /* Bordas vermelhas */
+            border-radius: 5px;
+            outline: none;
+            font-size: 16px;
+            background-color: red; /* Fundo vermelho para os inputs */
+            color: white; /* Texto branco para contraste */
+        }
+
+        .login__input::placeholder {
+            color: white; /* Placeholder branco */
+        }
+
+        .login__check {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white; /* Texto branco para o label */
+        }
+
+        .login__button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: darkred; /* Fundo vermelho escuro para o botão */
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .login__button:hover {
+            background-color: crimson; /* Efeito de hover mais claro */
+        }
+
+        .login__register {
+            margin-top: 15px;
+            font-size: 14px;
+            color: white; /* Texto branco para o registro */
+        }
+    </style>
+
+    <title>Login - Indaiatuba</title>
 </head>
 <body>
-<div class="login">,
-    <img src="assets/img/login-logo.png" class="logo">
-    <video autoplay muted loop id="video-background">
-        <source src="https://github.com/dev-brunoliveira/GTR-LOGIN/raw/main/assets/mp4/GTR%20GOSTOS%C3%83O.mp4">
-    </video>
-    <form action="" class="login__form">
+    <div class="login">
+        <img src="assets/img/login-logo.png" class="logo">
+        <video autoplay muted loop id="video-background">
+            <source src="https://github.com/dev-brunoliveira/GTR-LOGIN/raw/main/assets/mp4/GTR%20GOSTOS%C3%83O.mp4">
+        </video>
+        <form action="" class="login__form">
 
-        <h1 class="login__title">Login</h1>
+            <h1 class="login__title">Login</h1>
 
-        <div class="login__inputs">
-            <div class="login__box">
-                <input type="email" placeholder="Email ID" required class="login__input">
-                <i class="ri-mail-fill"></i>
+            <div class="login__inputs">
+                <div class="login__box">
+                    <input type="email" placeholder="Email ID" required class="login__input">
+                    <i class="ri-mail-fill"></i>
+                </div>
+
+                <div class="login__box">
+                    <input type="password" placeholder="Password" required class="login__input">
+                    <i class="ri-lock-2-fill"></i>
+                </div>
             </div>
 
-            <div class="login__box">
-                <input type="password" placeholder="Password" required class="login__input">
-                <i class="ri-lock-2-fill"></i>
-            </div>
-        </div>
+            <div class="login__check">
+                <div class="login__check-box">
+                    <input type="checkbox" class="login__check-input" id="user-check">
+                    <label for="user-check" class="login__check-label">Lembre de mim</label>
+                </div>
 
-        <div class="login__check">
-            <div class="login__check-box">
-                <input type="checkbox" class="login__check-input" id="user-check">
-                <label for="user-check" class="login__check-label">Lembre de mim</label>
+                <a href="Password.html" class="login__forgot">Esqueceu sua senha?</a>
             </div>
 
-            <a href="Password.html" class="login__forgot">Esqueceu sua senha?</a>
-        </div>
+            <button type="submit" class="login__button">Entrar</button>
 
-        <button type="submit" class="login__button">Entrar</button>
-
-        <div class="login__register"> Não tem uma conta? <a href="register.html">Registrar</a>
-        </div>
-    </form>
-</div>
+            <div class="login__register"> Não tem uma conta? <a href="register.html" style="color: white;">Registrar</a>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
